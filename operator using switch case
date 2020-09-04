@@ -1,0 +1,63 @@
+import java.lang.*;
+import java.util.*;
+class operators
+{
+   public static void main(String args[]) 
+{
+      
+      System.out.println("1] LOGICAL OPERATORS \n 2] BITWISE OPERATORS \n 3] RELATIONAL OPERATORS \n 4] EXIT");
+      System.out.println("ENTER CHOICE");
+      Scanner t = new Scanner(System.in);
+      int p = t.nextInt();
+      
+      /*System.out.println("ENTER TWO NOS:");
+      a = t.nextInt();
+      b = t.nextInt();*/
+      switch(p)
+      {
+      case 1:
+      {
+    	  boolean a = true, b = false;
+    	  System.out.println("a && b = " + (a && b));
+    	  System.out.println("a || b = " + (a || b) );
+    	  System.out.println("!(a || b) = " + !(a || b));
+    	  System.out.println("!(a && b) = " + !(a && b));
+      }
+      break;
+      case 2:
+      {
+    	  System.out.println("ENTER TWO NOS:");
+          int x = t.nextInt();
+    	  int y = t.nextInt();
+    	  System.out.println("x & y = " + (x & y));
+    	  System.out.println("x | y = " + (x | y) );
+    	  System.out.println("NOT of x = " + ~x);
+    	  System.out.println("NOT of y = " + ~y);
+    	  System.out.println("(x ^ y) = " + (x ^ y));
+    	  System.out.println("(x >> 2) = " + (x >> 2));
+    	  System.out.println("(y >> 2) = " + (y >> 2));
+    	  System.out.println("(x << 2) = " + (x << 2));
+    	  System.out.println("(y << 2) = " + (y << 2));
+    	  System.out.println("(x >>> 2) = " + (x >>> 2));
+      }
+      break;
+      case 3:
+      {   
+          System.out.println("ENTER TWO NOS:");
+    	  int s = t.nextInt();
+    	  int q = t.nextInt();
+    	  System.out.println("s == q = " + (s == q) );
+          System.out.println("s != q = " + (s != q) );
+          System.out.println("s > q = " + (s > q) );
+          System.out.println("s < q = " + (s < q) );
+          System.out.println("q >= s = " + (q >= s) );
+          System.out.println("q <= s = " + (q <= s) ); 
+      }
+       break;
+      case 4:
+    	  break;
+       default  :
+    	   System.out.println("Invalid choice");
+      }
+}
+}
